@@ -81,5 +81,6 @@ public class DAO<E> {
 	public void fechar() {
 		em.close();
 	}
+	
 
 }
