@@ -11,12 +11,12 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 @Entity
-public class Pedido {
+public class Pedido{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@Column (nullable = false)
+	@Column(nullable = false)
 	private Date data;
 	@OneToMany(mappedBy = "pedido")
 	private List<ItemPedido> itens;
@@ -52,7 +52,5 @@ public class Pedido {
 	public void setItens(List<ItemPedido> itens) {
 		this.itens = itens;
 	}
-	
-	
 
 }

@@ -17,8 +17,8 @@ public class ObterProdutos {
 //			System.out.println(produto);
 //		}
 //		
-//		double precoTotal = produtos.stream().map(p -> p.getPreco()).reduce(0.0, (t,p) -> t + p).doubleValue();
-//		System.out.println("o valor total é: " +precoTotal);
+		double precoTotal = produtos.stream().map(p -> p.getPreco()).reduce(0.0, (t,p) -> t + p).doubleValue();
+		System.out.println("o valor total é: " +precoTotal);
 
 	}
 

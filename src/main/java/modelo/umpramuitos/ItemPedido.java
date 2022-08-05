@@ -10,7 +10,7 @@ import javax.persistence.ManyToOne;
 import modelo.basics.Produto;
 
 @Entity
-public class ItemPedido {
+public class ItemPedido{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -16,6 +16,8 @@ public class NovoPedido {
 		ItemPedido item = new ItemPedido(pedido,produto,10);
 		
 		dao.abrirT().incluir(produto).incluir(pedido).incluir(item).fecharT().fechar();
+		
+		
 	}
 
 }

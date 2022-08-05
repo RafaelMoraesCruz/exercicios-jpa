@@ -25,7 +25,8 @@ public class Filme {
 	private Double nota;
 
 	@ManyToMany(cascade = CascadeType.PERSIST)
-	@JoinTable(name = "atores_filmes", joinColumns = @JoinColumn(name = "filme_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "ator_id", referencedColumnName = "id"))
+	@JoinTable(name = "atores_filmes", joinColumns = @JoinColumn(name = "filme_id", referencedColumnName = "id"),
+	inverseJoinColumns = @JoinColumn(name = "ator_id", referencedColumnName = "id"))
 	private List<Ator> atores = new ArrayList<>();
 
 	public Filme() {
